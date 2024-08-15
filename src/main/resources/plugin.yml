@@ -1,0 +1,52 @@
+name: EcoGen
+main: br.Siblus.DEV.EcoGen
+version: 1.0
+api-version: 1.18
+author: SeuNome
+
+commands:
+  criarmoeda:
+    description: "Cria uma nova moeda no sistema."
+    usage: "/criarmoeda <nome> <valorInicial>"
+    permission: "ecogen.criarmoeda"
+
+  saldo:
+    description: "Mostra o saldo do jogador."
+    usage: "/saldo [moeda]"
+    permission: "ecogen.saldo"
+
+  setdinheiro:
+    description: "Define o saldo do jogador."
+    usage: "/setdinheiro <jogador> <moeda> <valor>"
+    permission: "ecogen.setdinheiro"
+
+  transferir:
+    description: "Transfere dinheiro de uma conta para outra."
+    usage: "/transferir <jogadorDestino> <moeda> <quantia>"
+    permission: "ecogen.transferir"
+
+  alterarvalor:
+    description: "Altera o valor de uma moeda."
+    usage: "/alterarvalor <moeda> <novoValor>"
+    permission: "ecogen.alterarvalor"
+
+permissions:
+  ecogen.criarmoeda:
+    description: "Permissão para criar uma nova moeda."
+    default: op
+
+  ecogen.saldo:
+    description: "Permissão para ver o saldo."
+    default: true
+
+  ecogen.setdinheiro:
+    description: "Permissão para definir o saldo do jogador."
+    default: op
+
+  ecogen.transferir:
+    description: "Permissão para transferir dinheiro."
+    default: true
+
+  ecogen.alterarvalor:
+    description: "Permissão para alterar o valor de uma moeda."
+    default: op

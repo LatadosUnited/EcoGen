@@ -1,0 +1,17 @@
+database:
+  type: mysql #mysql Ou "sqlite"
+  mysql:
+    host: localhost
+    port: 3306
+    name: minecraft
+    user: root
+    password: ''
+  sqlite:
+    name: database
+messages:
+  saldo_todos: "Seu saldo em todas as moedas:"
+  moeda_criada: "Moeda %moeda% criada com valor inicial de %valor%!"
+  saldo_mostrado: "Seu saldo em %moeda%: %saldo%"
+  erro_valor_negativo: "O valor não pode ser negativo."
+  setdinheiro_sucesso: "Saldo definido com sucesso para %jogador% com a moeda %moeda% e valor %valor%."
+  # Adicione outras mensagens aqui
